@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -121,6 +122,39 @@ public class Main {
         System.out.println("При худении на 250 граммов в день - "  + easyWay + " дней");
         System.out.println("При худении на 500 граммов в день - "  + hardWay + " дней");
         System.out.println("В среднем похудение может занять "  + middle + " дней");
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+
+        int mashaTenPercent = (masha / 100) * 10;
+        int denisTenPercent = (denis / 100) * 10;
+        int kristinaTenPercent = (kristina / 100) * 10;
+
+        int mashaBonus = masha + mashaTenPercent;
+        int denisBonus = denis + denisTenPercent;
+        int kristinaBonus = kristina + kristinaTenPercent;
+
+        int mashaInYearThen = masha * 12;
+        int denisInYearThen = denis * 12;
+        int kristinaInYearThen = kristina * 12;
+
+        int mashaInYearNow = mashaBonus * 12;
+        int denisInYearNow = denisBonus * 12;
+        int kristinaInYearNow = kristinaBonus * 12;
+
+        int mashaDifference = mashaInYearNow - mashaInYearThen;
+        int denisDifference = denisInYearNow - denisInYearThen;
+        int kristinaDifference = kristinaInYearNow - kristinaInYearThen;
+
+
+        System.out.println("Маша теперь получает " + mashaBonus + " рублей. Годовой доход вырос на " + mashaDifference + "рублей");
+        System.out.println("Денис теперь получает " + denisBonus + " рублей. Годовой доход вырос на " + denisDifference + "рублей");
+        System.out.println("Кристина теперь получает " + kristinaBonus + " рублей. Годовой доход вырос на " + kristinaDifference + "рублей");
+
     }
 
 }
