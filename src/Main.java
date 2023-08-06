@@ -4,6 +4,8 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
+
     }
 
     public static void task1() {
@@ -74,6 +76,18 @@ public class Main {
         int oneMonth = threeDays * 10;
         int inMonth = (oneMonth / 2) * bottles;
         System.out.println("За три дня машина произвела " + inMonth + " штук бутылок");
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        byte allPaints = 120;
+        byte whitePaint = 2;
+        byte brownPaint = 4;
+        int howManyClasses = allPaints / (whitePaint + brownPaint);
+        int howManyWhite = howManyClasses * whitePaint;
+        int howManyBrown = howManyClasses * brownPaint;
+        System.out.println("В школе, где " + howManyClasses + " классов, нужно " + howManyWhite + " банок белой краски и " + howManyBrown + " банок коричневой краски");
+
     }
 
 }
