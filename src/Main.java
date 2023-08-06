@@ -5,7 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
-
+        task6();
     }
 
     public static void task1() {
@@ -87,6 +87,25 @@ public class Main {
         int howManyWhite = howManyClasses * whitePaint;
         int howManyBrown = howManyClasses * brownPaint;
         System.out.println("В школе, где " + howManyClasses + " классов, нужно " + howManyWhite + " банок белой краски и " + howManyBrown + " банок коричневой краски");
+
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        short bananaWeight = 80;
+        short milkWeight = 105;
+        short iceCreamWeight = 100;
+        short eggWeight = 70;
+
+        int fiveBananas = bananaWeight * 5;
+        int twoMilk = milkWeight * 2;
+        int twoIceCreams = iceCreamWeight * 2;
+        int fourEggs = eggWeight * 4;
+
+        float breakfastGr = fiveBananas + twoMilk + twoIceCreams + fourEggs;
+        float breakfastKg = breakfastGr / 1000;
+
+        System.out.println(breakfastGr + "гр или " + breakfastKg + "кг");
 
     }
 
