@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1 () {
@@ -36,6 +37,19 @@ public class Main {
         System.out.println(e);
         System.out.println(f);
         System.out.println(g);
+
+
+    }
+
+    public static void task3 () {
+        System.out.println("Задача 3");
+        byte lp = 23;
+        byte as = 27;
+        byte ea = 30;
+        short paper = 480;
+        int allStudents = lp + as + ea;
+        int paperForStudent = paper / allStudents;
+        System.out.println("На каждого ученика рассчитано " + paperForStudent + " листов бумаги");
 
 
     }
