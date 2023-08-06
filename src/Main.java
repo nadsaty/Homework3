@@ -3,9 +3,10 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
-    public static void task1 () {
+    public static void task1() {
         System.out.println("Задача 1");
         int firstOne = 1000000;
         byte secondOne = 100;
@@ -21,7 +22,7 @@ public class Main {
         System.out.println("Значение переменной sixthOne с типом double равно " + sixthOne);
     }
 
-    public static void task2 () {
+    public static void task2() {
         System.out.println("Задача 2");
         float a = 27.12F;
         long b = 987678965549L;
@@ -41,7 +42,7 @@ public class Main {
 
     }
 
-    public static void task3 () {
+    public static void task3() {
         System.out.println("Задача 3");
         byte lp = 23;
         byte as = 27;
@@ -53,4 +54,26 @@ public class Main {
 
 
     }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        byte bottles = 16;
+        byte oneHour = 60;
+        int twentyMinutes = oneHour / 3;
+        int inTwenty = (twentyMinutes / 2) * bottles;
+        System.out.println("За 20 минут машина произвела " + inTwenty + " штук бутылок");
+
+        int oneDay = oneHour * 24;
+        int inDay = (oneDay / 2) * bottles;
+        System.out.println("За сутки машина произвела " + inDay + " штук бутылок");
+
+        int threeDays = oneDay * 3;
+        int inThreeDays = (threeDays / 2) * bottles;
+        System.out.println("За три дня машина произвела " + inThreeDays + " штук бутылок");
+
+        int oneMonth = threeDays * 10;
+        int inMonth = (oneMonth / 2) * bottles;
+        System.out.println("За три дня машина произвела " + inMonth + " штук бутылок");
+    }
+
 }
