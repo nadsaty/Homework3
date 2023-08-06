@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -107,6 +108,19 @@ public class Main {
 
         System.out.println(breakfastGr + "гр или " + breakfastKg + "кг");
 
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int target = 7;
+        int easy = 250;
+        int hard = 500;
+        int easyWay = (target * 1000) / easy;
+        int hardWay = (target * 1000) / hard;
+        int middle = (easyWay + hardWay) / 2;
+        System.out.println("При худении на 250 граммов в день - "  + easyWay + " дней");
+        System.out.println("При худении на 500 граммов в день - "  + hardWay + " дней");
+        System.out.println("В среднем похудение может занять "  + middle + " дней");
     }
 
 }
